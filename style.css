@@ -27,27 +27,39 @@
   /* --font-display: "Font Populista"; */
 }
 
-/* Fonts */
 html {
   font-size: 100%; /*16px*/
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   background-color: var(--color-lighter);
-  margin: 0.2rem 1rem 0;
 }
 
+main,
+footer {
+  margin: 0 2rem;
+}
+
+header{
+  margin: 2rem 2rem;
+}
 /* nav bar */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
   font-weight: 300;
   border-bottom: solid 0.5px var(--color-dark);
-  background-color: inherit;
+  background-color: var(--color-darker);
+  padding: 0.2rem 2rem 0;
 }
 
-#dark-theme{
-    font-size: 2rem;
+#dark-theme {
+  font-size: 2rem;
 }
 
 #menu {
@@ -56,7 +68,7 @@ nav {
 }
 
 a {
-    font-family: var(--font-paragraph);
+  font-family: var(--font-paragraph);
   color: var(--color-dark);
 }
 
@@ -129,7 +141,6 @@ h2 {
 .card {
   /* border: solid 0.8px var(--color-dark); */
   position: relative;
-  border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
 }
